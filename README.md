@@ -8,3 +8,10 @@ My collection of Adobe After Effects Scripts
 + Perfect for KBar https://aescripts.com/kbar/
 
 ---
+
+--<b>freeze-frame-adjust-length.jsx</b>
++ For every selected Layer :
++ Layer > Time > Freeze Frame
++ Fits Layer <b>In</b> and <b>Out</b> to Composition
+
+---
