@@ -11,9 +11,9 @@
         var numLayers = layers.length;
         for (var l = 0; l < numLayers; l++) {
             var layer = layers[l];
-						app.executeCommand(app.findMenuCommandId("Freeze Frame"));
-						layer.inPoint = comp.displayStartTime;
-						layer.outPoint = comp.duration;
+            app.executeCommand(app.findMenuCommandId("Freeze Frame"));
+            layer.inPoint = comp.displayStartTime;
+            layer.outPoint = comp.duration;
         }
     } catch(err) {
         alert(err);
