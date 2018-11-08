@@ -1,6 +1,6 @@
 # ae-scripts
 ## My collection of Adobe After Effects Scripts
----
+
 ### create-cc-shapelayer.jsx
 + Creates a quick Adjustment-Layer. _( as Shape-Layer )_ <b>#NoSolids</b></br>
 + Always inserts on top of your selected Layer
