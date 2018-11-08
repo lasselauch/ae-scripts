@@ -1,7 +1,7 @@
 # ae-scripts
-My collection of Adobe After Effects Scripts
-
---<b>create-cc-shapelayer.jsx</b>
+## My collection of Adobe After Effects Scripts
+---
+### create-cc-shapelayer.jsx
 + Creates a quick Adjustment-Layer. _( as Shape-Layer )_ <b>#NoSolids</b></br>
 + Always inserts on top of your selected Layer
 + Sets some expressions to always fit to your Composition Size.</br>
@@ -9,9 +9,16 @@ My collection of Adobe After Effects Scripts
 
 ---
 
---<b>freeze-frame-adjust-length.jsx</b>
+### freeze-frame-adjust-length.jsx
 + For every selected Layer :
 + Layer > Time > Freeze Frame
 + Fits Layer <b>In</b> and <b>Out</b> to Composition
++ Perfect for KBar https://aescripts.com/kbar/
+
+---
+
+### add-selected-precomps-to-renderqueue.jsx
++ Add selected PreComps of active Comp to RenderQueue
++ Perfect for KBar https://aescripts.com/kbar/
 
 ---
