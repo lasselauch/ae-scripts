@@ -18,6 +18,8 @@ function createCClayer(){
   if (sel_layer){oShape.moveBefore(sel_layer);}
   oShape.name = ("Null");
   oShape.label = 2;
+  oShape.guideLayer = true;
+  oShape.property("ADBE Transform Group").property("ADBE Opacity").setValue(0);
 
   shapeGroup = oShape.property("Contents").addProperty("ADBE Vector Group");
   shapeGroup.property("Contents").addProperty("ADBE Vector Shape - Rect");
