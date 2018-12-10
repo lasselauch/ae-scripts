@@ -3,8 +3,8 @@
 #Use at your own risk
 */
 
-function createCClayer(){
-  app.beginUndoGroup('create-cc-layer');
+function createNullLayer(){
+  app.beginUndoGroup('create-null-layer');
   var comp = app.project.activeItem;
 
   if (comp != null){
@@ -38,4 +38,4 @@ function createCClayer(){
 
   }
 
-createCClayer();
+createNullLayer();
