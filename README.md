@@ -28,3 +28,9 @@
 + Perfect for KBar https://aescripts.com/kbar/
 
 ---
+
+### copy-project-to-watchfolder.jsx
++ Save Project and send a copy to your AME-Watch-Folder.
++ Perfect for KBar https://aescripts.com/kbar/
+
+---
