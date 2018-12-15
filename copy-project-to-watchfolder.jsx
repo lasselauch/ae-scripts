@@ -12,14 +12,12 @@
             var current_filename = app.project.file.name;
             var target_path = 'D:\\_CACHE\\_WatchFolder\\{filename}'.replace('{filename}', current_filename);
             var target = new File(target_path);
-            var thisFile = new File(app.project.file.fsName); // (of fsname - look it up)
+            var thisFile = new File(app.project.file.fsName);
             if (target.exists) {
-                //put stuff in here to increment file name using regex, perhaps
-                //or save the file elsewhere.
+                //whatever
             } else {
                 thisFile.copy(target);
             }
-            //alert(app.project.file.fsName);
         }
 
     } catch (err) {
