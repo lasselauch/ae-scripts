@@ -1,6 +1,12 @@
 # ae-scripts
 ## My collection of Adobe After Effects Scripts
+---
+### copy_paste_ray-colors
++ Copy Color-Palette from Ray Dynamic Color to your Clipboard
++ Paste Swatches or Planes in C4D
++ Download here:
 
+---
 ### cc-shapelayer.jsx
 + Creates a quick Adjustment-Layer. _( as Shape-Layer )_ <b>#NoSolids</b></br>
 + Always inserts on top of your selected Layer
@@ -32,5 +38,3 @@
 ### copy-project-to-watchfolder.jsx
 + Save Project and send a copy to your AME-Watch-Folder.
 + Perfect for KBar https://aescripts.com/kbar/
-
----
