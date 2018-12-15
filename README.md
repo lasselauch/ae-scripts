@@ -1,10 +1,9 @@
 # ae-scripts
 ## My collection of Adobe After Effects Scripts
 ---
-### copy_paste_ray-colors
+### [ copy_paste_ray-colors ]
 + Copy Color-Palette from Ray Dynamic Color to your Clipboard
-+ Paste Swatches or Planes in C4D
-+ Download here:
++ Paste as Swatches or colored Planes in C4D
 
 ---
 ### cc-shapelayer.jsx
