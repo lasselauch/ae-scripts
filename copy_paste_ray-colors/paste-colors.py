@@ -58,11 +58,9 @@ def InsertColorPlanes(myName, myColors):
 
 def GetColors(string):
     #String for Testing purposes
-    #string = "Ray - Rodrigo Moynihan ;1,1,1,1;0.28125,0.13671875,0.48828125,1;0.8828125,0.72265625,0.625,1;1,0.86328125,0,1;0.8828125,0,0.22265625,1;0.37109375,0.765625,0.88671875,1;0,0.5078125,0.765625,1;1,0.79840242862701,0.61587011814117,1;"
-    if not isinstance(string, basestring):
-        return
+    #string = "AE-C4D-CopyPasteColors;Ray - AEC4D-PRO;0.84313726425171,0.83137255907059,0.83137255907059,1;0.54901963472366,0.53725492954254,0.53725492954254,1;0.27058824896812,0.27058824896812,0.27058824896812,1;0.38431373238564,0.5137255191803,0.86274510622025,1;0.33333334326744,0.30588236451149,0.81960785388947,1;0.50196081399918,0,1,1;0.14509804546833,0.14117647707462,0.47843137383461,1;0.84705883264542,0.62745100259781,0.98039215803146,1;0.83137255907059,0.2392156869173,0.43137255311012,1;1,0.25,0.25,1;0.97647058963776,0.678431391716,1,1;"
 
-    if not c4d.GetClipboardType() == c4d.CLIPBOARDTYPE_STRING:
+    if not c4d.GetClipboardType() == c4d.CLIPBOARDTYPE_STRING and not string.startswith('AE-C4D-CopyPasteColors'):
         return
 
     color_table = string.split(';')[:-1]
@@ -70,7 +68,12 @@ def GetColors(string):
     if not color_table:
         return
 
+    #Remove Identifier > 'AE-C4D-CopyPasteColors'
+    identifier = color_table.pop(0)
+
+    #Pop Palette-Name from String
     myName = color_table.pop(0)
+
     myColors, my4DColors = [], []
 
     for item in color_table:
@@ -98,6 +101,9 @@ def InsertSwatchesR18(doc, group_name, colors):
 
     swatch_data.Save(doc)
 
+    message = 'Imported: %s Colors as "%s" into your Color-Swatches.' % (len(colors), group_name)
+    gui.MessageDialog(message)
+
 def InsertSwatchesR20(doc, group_name, colors):
     swatch_data = c4d.modules.colorchooser.ColorSwatchData(doc)
     if swatch_data is None:
@@ -107,12 +113,19 @@ def InsertSwatchesR20(doc, group_name, colors):
     group = swatch_data.AddGroup(c4d.SWATCH_CATEGORY_DOCUMENT, group_name, False, -1, colors)
     swatch_data.Save(doc, False)
 
+    message = 'Imported: %s Colors as "%s" into your Color-Swatches.' % (len(colors), group_name)
+    gui.MessageDialog(message)
+
 def main():
     #Check Modifiers
     ctrl, shift, alt = GetModifiers()
 
     #Get String from Clipboard
     clipboard = c4d.GetStringFromClipboard()
+    if not clipboard.startswith('AE-C4D-CopyPasteColors'):
+        gui.MessageDialog('Please, use "copy-colors.jsx" for After Effects first...')
+        return
+
     myName, myColors, my4DColors = GetColors(clipboard)
 
     #Import only Planes with Colors, without any questions...

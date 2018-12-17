@@ -18,9 +18,9 @@
       return;
     }
 
-    var string = ""
+    var string = "AE-C4D-CopyPasteColors;"
     //Let's collect the Layer-Name as Swatch-Group-Name
-    string += comp.layer(1).name + ";";
+    string += comp.name + ";";
 
     var effects = aeq.getEffects(comp.layer(1));
     if (effects == null || effects.length === 0) {

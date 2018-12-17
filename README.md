@@ -4,6 +4,7 @@
 ### [ copy_paste_ray-colors ]
 + Copy Color-Palette from Ray Dynamic Color to your Clipboard
 + Paste as Swatches or colored Planes in C4D
++ Usage of the wonderful 'aequery' scripting library for Adobe After Effects: http://aequery.aenhancers.com/
 
 ---
 ### cc-shapelayer.jsx
