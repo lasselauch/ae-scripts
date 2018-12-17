@@ -6,6 +6,7 @@
 # Watch: [Quick Overview](https://raw.githubusercontent.com/lasselauch/ae-scripts/master/copy_paste_ray-colors/img/Copy-Paste-RayColors.webm)
 + Copy Color-Palette from Ray Dynamic Color to your Clipboard<br>
 ( go to your Ray-Comp and run the script: [copy-colors.jsx](./copy_paste_ray-colors/copy-colors.jsx) )
++ Perfect for KBar https://aescripts.com/kbar/
 + Paste as Swatches or colored Planes in C4D<br>
 ( in Cinema 4D run the script: [paste-colors.py](./copy_paste_ray-colors/paste-colors.py) )
 + Usage of the wonderful 'aequery' scripting library for Adobe After Effects: http://aequery.aenhancers.com/
