@@ -3,6 +3,7 @@
 ---
 ### [ copy_paste_ray-colors ]
 ![<Copy-Paste-RayColors.webm>](./copy_paste_ray-colors/img/Copy-Paste-RayColors.gif)
+# Watch: [Quick Overview](https://raw.githubusercontent.com/lasselauch/ae-scripts/master/copy_paste_ray-colors/img/Copy-Paste-RayColors.webm)
 + Copy Color-Palette from Ray Dynamic Color to your Clipboard<br>
 ( go to your Ray-Comp and run the script: [copy-colors.jsx](./copy_paste_ray-colors/copy-colors.jsx) )
 + Paste as Swatches or colored Planes in C4D<br>
