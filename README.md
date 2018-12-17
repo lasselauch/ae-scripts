@@ -2,8 +2,11 @@
 ## My collection of Adobe After Effects Scripts
 ---
 ### [ copy_paste_ray-colors ]
-+ Copy Color-Palette from Ray Dynamic Color to your Clipboard
-+ Paste as Swatches or colored Planes in C4D
+![<Copy-Paste-RayColors.webm>](./copy_paste_ray-colors/img/Copy-Paste-RayColors.gif)
++ Copy Color-Palette from Ray Dynamic Color to your Clipboard<br>
+( go to your Ray-Comp and run the script: [copy-colors.jsx](./copy_paste_ray-colors/copy-colors.jsx) )
++ Paste as Swatches or colored Planes in C4D<br>
+( in Cinema 4D run the script: [paste-colors.py](./copy_paste_ray-colors/paste-colors.py) )
 + Usage of the wonderful 'aequery' scripting library for Adobe After Effects: http://aequery.aenhancers.com/
 
 ---
