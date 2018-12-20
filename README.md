@@ -12,6 +12,11 @@
 + Usage of the wonderful 'aequery' scripting library for Adobe After Effects: http://aequery.aenhancers.com/
 
 ---
+### stretch-and-sequence-layer.jsx
++ Stretches selected Layers by _"Input"_ and create a Sequence.
++ Perfect for KBar https://aescripts.com/kbar/
+
+---
 ### cc-shapelayer.jsx
 + Creates a quick Adjustment-Layer. _( as Shape-Layer )_ <b>#NoSolids</b></br>
 + Always inserts on top of your selected Layer
