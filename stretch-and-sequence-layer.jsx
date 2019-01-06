@@ -6,6 +6,7 @@
 (function() {
     try {
       app.beginUndoGroup("Stretch and Sequence Layer");
+      var comp = app.project.activeItem;
       var s = comp.selectedLayers;
       if (s == null || s.length == 0) {
         return;
