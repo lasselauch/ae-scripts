@@ -18,7 +18,6 @@ function createTextlayer() {
   layer = layers.addText();
   if (sel_layer) {
     oText.moveBefore(sel_layer);
-  } else { //pass
   }
 
   //Set Text Properties
@@ -30,20 +29,21 @@ function createTextlayer() {
   layer_doc.justification = ParagraphJustification.CENTER_JUSTIFY;
   layer_prop.setValue(layer_doc);
 
+  //Add Effects
   //FastBlur
   effect1 = layer.property("ADBE Effect Parade").addProperty("ADBE Fast Blur");
   shift = layer.property("ADBE Effect Parade").property("ADBE Fast Blur").property("ADBE Fast Blur-0001").setValue(10);
 
   //Shift Channels
-  effect3 = layer.property("ADBE Effect Parade").addProperty("ADBE Shift Channels");
+  effect2 = layer.property("ADBE Effect Parade").addProperty("ADBE Shift Channels");
   shift = layer.property("ADBE Effect Parade").property("ADBE Shift Channels").property("ADBE Shift Channels-0001").setValue(9);
 
   //Fill
-  effect4 = layer.property("ADBE Effect Parade").addProperty("ADBE Fill");
+  effect3 = layer.property("ADBE Effect Parade").addProperty("ADBE Fill");
   shift = layer.property("ADBE Effect Parade").property("ADBE Fill").property("ADBE Fill-0002").setValue([0, 0, 0]);
 
   //CC Composite
-  effect5 = layer.property("ADBE Effect Parade").addProperty("CC Composite");
+  effect4 = layer.property("ADBE Effect Parade").addProperty("CC Composite");
 
   app.endUndoGroup();
 
