@@ -7,9 +7,10 @@
     try {
         app.beginUndoGroup("Reload Footage and Outpoint");
         var comp = app.project.activeItem;
-        var layers = comp.selectedLayers;
+        // var layers = comp.selectedLayers;
+        var layers = comp.layers;
         var numLayers = layers.length;
-        for (var l = 0; l < numLayers; l++) {
+        for (var l = 1; l <= numLayers; l++) {
             var layer = layers[l];
             if (layer.source instanceof FootageItem) {
                 layer.source.mainSource.reload();
